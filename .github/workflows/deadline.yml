@@ -8,6 +8,7 @@ on:
 jobs:
   check-deadline:
     runs-on: ubuntu-latest
+    permissions: write-all
 
     steps:
       - name: Checkout code
@@ -29,7 +30,7 @@ jobs:
         with:
           script: |
             const timestamp = parseInt(process.env.TIMESTAMP) * 1000;
-            const deadline = new Date('2023-12-13T23:59:00Z').getTime();
+            const deadline = new Date('2023-12-06T23:59:00Z').getTime();
             const newLabel = timestamp < deadline ? 'in time' : 'late';
 
             console.log(timestamp, deadline);
