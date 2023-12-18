@@ -35,6 +35,7 @@ There are automated checks that verify that your submission is correct:
 
 We divided up the classes as was required by the assignment explanation pdf. As python (unlike java) does not implement public, protected or private access levels for functions/methods or variables we decided the following:
 
--All variables that could be of possible interest to a user of our program are preceded by an underscore. All other variables are solemnly used within functions and the memory that they reserve is released after the completion of the method/function.
+-All variables that could be of possible interest to a user of our program are preceded by an underscore. 
+ All other variables are solemnly used within functions and the memory that they reserve is released after the completion of the method/function and could thus be considered "private". 
 -We did not consider applying the same convention for the classes as there are no support classes or classes that use inheritance and as such all classes and its functions may be used by the user.
 

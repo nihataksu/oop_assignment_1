@@ -45,3 +45,34 @@ class MultipleLinearRegressor:
 
         return _predictions
 
+    @property
+    def intercept(self):
+        return self.intercept
+
+    @intercept.setter
+    def intercept(self, val):
+        self._intercept = val
+
+    @property
+    def coefficients(self):
+        return self.coefficients
+
+    @coefficients.setter
+    def coefficients(self, val):
+        self._coefficients = val
+
+    @property
+    def features(self):
+        return self.features
+
+    @features.setter
+    def features(self, val):
+        self.features = val
+
+    @property
+    def target(self):
+        return self.target
+
+    @target.setter
+    def target(self, val):
+        self.target = val
