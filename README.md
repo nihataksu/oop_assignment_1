@@ -5,11 +5,9 @@ Please follow the instructions given in the [PDF](https://brightspace.rug.nl/con
 
 ## How to carry out your assignment
 
-1. Clone this template into a private repository.
-2. Please add your partner and `oop-otoz` to the collaborators.
-3. Create a new branch called `submission`.
-4. Create your code in the `main` branch.
-5. Once you are done with the assignment (or earlier), create a pull request from the `main` branch to your `submission` branch and add `oop-otoz` to the reviewers.
+Fork this repo on your private github account.
+You can do so by clicking this button on the top-right panel:
+![](fork.png) 
 
 The assignment is divided into 4 blocks.
 Block 1, 2, and 3 all define different classes.
@@ -28,10 +26,16 @@ The code should be submitted on GitHub by opening a Pull Request from the branch
 There are automated checks that verify that your submission is correct:
 
 1. Deadline - checks that the last commit in a PR was made before the deadline
-2. Reproducibility - downloads libraries included in `requirements.txt` and runs `python3 main.py`. If your code does not throw any errors, it will be marked as reproducible.
+2. Reproducibility - downloads libraries included in `requirements.txt` and runs `python3 src/main.py`. If your code does not throw any errors, it will be marked as reproducible.
 3. Style - runs `flake8` on your code to ensure adherence to style guides.
 
 ---
 
 ## Your report
+
+We divided up the classes as was required by the assignment explanation pdf. As python (unlike java) does not implement public, protected or private access levels for functions/methods or variables we decided the following:
+
+-All variables that could be of possible interest to a user of our program are preceded by an underscore. 
+ All other variables are solemnly used within functions and the memory that they reserve is released after the completion of the method/function and could thus be considered "private". 
+-We did not consider applying the same convention for the classes as there are no support classes or classes that use inheritance and as such all classes and its functions may be used by the user.
 
